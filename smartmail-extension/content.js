@@ -48,7 +48,7 @@ async function generateReply() {
       return;
     }
 
-    const response = await fetch("http://127.0.0.1:8080/api/email/generate", {
+    const response = await fetch("https://smartmail-ai-j71w.onrender.com/api/email/generate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

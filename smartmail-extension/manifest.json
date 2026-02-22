@@ -5,7 +5,7 @@
   "description": "Generate AI email replies inside Gmail",
   "permissions": ["activeTab", "scripting"],
   "host_permissions": [
-    "http://127.0.0.1:8080/*",
+    "https://smartmail-ai-j71w.onrender.com/*",
     "https://mail.google.com/*"
   ],
   "content_scripts": [
