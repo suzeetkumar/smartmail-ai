@@ -1,11 +1,14 @@
+
+# Use official Java 21 image
 FROM eclipse-temurin:21-jdk
 
 WORKDIR /app
+
+# Copy everything
 COPY . .
 
-RUN chmod +x mvnw
+# Build the jar
 RUN ./mvnw clean package -DskipTests
 
-EXPOSE 8080
-
-CMD ["java", "-jar", "target/*.jar"]
+# Run the exact jar file name
+CMD ["java", "-jar", "target/smartmail-ai-0.0.1-SNAPSHOT.jar"]
